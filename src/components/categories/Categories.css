@@ -1,0 +1,8 @@
+.category img {
+  width: 60px;
+  height: 60px;
+}
+.category div {
+  font-weight: 500;
+  font-size: 14px;
+}
