@@ -10,6 +10,11 @@ import ListDemo1 from "../List/ListDemo1";
 import ListDemo2 from "../List/ListDemo2";
 import ListDemo3 from "../List/ListDemo3";
 import ListDemo4 from "../List/ListDemo4";
+import UserList from "../List/UserList";
+import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
+import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
+import ForceUpdateDemo3 from "../forceUpdate/ForceUpdateDemo3";
+import GreetDemo1 from "../greet/GreetDemo1";
 
 export default function Main() {
   console.log(React);
@@ -25,7 +30,13 @@ export default function Main() {
       {/* <ListDemo1 /> */}
       {/* <ListDemo2 /> */}
       {/* <ListDemo3 /> */}
-      <ListDemo4 />
+      {/* <ListDemo4 /> */}
+      {/* <ForceUpdateDemo1 /> */}
+      {/* <ForceUpdateDemo2 /> */}
+      {/* <ForceUpdateDemo3 /> */}
+      {/* <GreetDemo1 name='Bikash' msg='Good Morning' /> */}
+      {/* <GreetDemo1 name='Sachin' msg='Good Evening' /> */}
+      <UserList />
     </div>
   );
 }
