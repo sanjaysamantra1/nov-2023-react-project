@@ -1,15 +1,19 @@
-/* import React from "react";
-export default function GreetDemo1(props) {
-  console.log(props);
-  return <h2> Hii {props.name} , {props.msg} !!!</h2>;
-} */
+import React from "react";
+import PropTypes from 'prop-types'
 
-import React, { Component } from 'react'
-
-export default class GreetDemo1 extends Component {
-  
-  render() {
-    return <h2> Hii {this.props.name} , {this.props.msg} !!!</h2>;
-  }
+export default function GreetDemo1({name,msg='Good Evening'}) {
+  return <h2> Hii {name} , {msg} !!!</h2>;
 }
+GreetDemo1.propTypes = {
+  name : PropTypes.string.isRequired,
+  msg : PropTypes.string
+}
+
+/* import React, { Component } from 'react';
+export default class GreetDemo1 extends Component {  
+  render() {
+    let {name, msg} = this.props;
+    return <h2> Hii {name} , {msg} !!!</h2>;
+  }
+} */
 

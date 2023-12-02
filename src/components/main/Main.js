@@ -15,6 +15,11 @@ import ForceUpdateDemo1 from "../forceUpdate/ForceUpdateDemo1";
 import ForceUpdateDemo2 from "../forceUpdate/ForceUpdateDemo2";
 import ForceUpdateDemo3 from "../forceUpdate/ForceUpdateDemo3";
 import GreetDemo1 from "../greet/GreetDemo1";
+import GreetDemo2 from "../greet/GreetDemo2";
+import MyModal from "../props/MyModal";
+import StateDemo0 from "../state/StateDemo0";
+import StateDemo1 from "../state/StateDemo1";
+import StateDemo2 from "../state/StateDemo2";
 
 export default function Main() {
   console.log(React);
@@ -34,9 +39,20 @@ export default function Main() {
       {/* <ForceUpdateDemo1 /> */}
       {/* <ForceUpdateDemo2 /> */}
       {/* <ForceUpdateDemo3 /> */}
-      {/* <GreetDemo1 name='Bikash' msg='Good Morning' /> */}
+      {/* <GreetDemo1 name="Bikash" msg="Good Morning" />
+      <GreetDemo1 name="Sachin" msg={undefined} /> */}
+      {/* <GreetDemo2>
+          <div>This content Goes from parent to child</div>
+      </GreetDemo2> */}
       {/* <GreetDemo1 name='Sachin' msg='Good Evening' /> */}
-      <UserList />
+      {/* <UserList /> */}
+      {/* <MyModal>
+          <h1>This content is from Parent</h1> 
+          <div>This content-2 is from Parent</div> 
+      </MyModal> */}
+      {/* <StateDemo0 /> */}
+      {/* <StateDemo1 /> */}
+      <StateDemo2 />
     </div>
   );
 }
