@@ -20,6 +20,11 @@ import MyModal from "../props/MyModal";
 import StateDemo0 from "../state/StateDemo0";
 import StateDemo1 from "../state/StateDemo1";
 import StateDemo2 from "../state/StateDemo2";
+import StateDemo3 from "../state/StateDemo3";
+import ToggleDemo from "../state/ToggleDemo";
+import CounterDemo1 from "../state/CounterDemo1";
+import AdditionDemo from "../state/AdditionDemo";
+import RemainingCharDemo from "../state/RemainingCharDemo";
 
 export default function Main() {
   console.log(React);
@@ -52,7 +57,12 @@ export default function Main() {
       </MyModal> */}
       {/* <StateDemo0 /> */}
       {/* <StateDemo1 /> */}
-      <StateDemo2 />
+      {/* <StateDemo2 /> */}
+      {/* <StateDemo3 /> */}
+      {/* <ToggleDemo /> */}
+      {/* <CounterDemo1 /> */}
+      {/* <AdditionDemo /> */}
+      <RemainingCharDemo />
     </div>
   );
 }
