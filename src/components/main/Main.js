@@ -1,5 +1,5 @@
 import React from "react";
-import Demo1 from "../demo1/Demo1";
+import Demo1 from "../demo/Demo1";
 import CssModule from "../cssModule/CssModule";
 import ConditionalCSS from "../conditionalCSS/ConditionalCSS";
 import ConditionalDemo1 from "../conditionalRendering/ConditionalDemo1";
@@ -25,9 +25,13 @@ import ToggleDemo from "../state/ToggleDemo";
 import CounterDemo1 from "../state/CounterDemo1";
 import AdditionDemo from "../state/AdditionDemo";
 import RemainingCharDemo from "../state/RemainingCharDemo";
+import SweetAlertDemo from "../demo/SweetAlertDemo";
+import ModalDemo1 from "../demo/ModalDemo1";
+import ModalDemo2 from "../demo/ModalDemo2";
+import Products from "../products/Products";
+import ProductsSearch from "../products/ProductsSearch";
 
 export default function Main() {
-  console.log(React);
   return (
     <div style={{ minHeight: "400px" }}>
       {/* <Demo1 /> */}
@@ -62,7 +66,12 @@ export default function Main() {
       {/* <ToggleDemo /> */}
       {/* <CounterDemo1 /> */}
       {/* <AdditionDemo /> */}
-      <RemainingCharDemo />
+      {/* <RemainingCharDemo /> */}
+      {/* <SweetAlertDemo /> */}
+      {/* <ModalDemo1 /> */}
+      {/* <ModalDemo2 /> */}
+      {/* <Products /> */}
+      <ProductsSearch />
     </div>
   );
 }
