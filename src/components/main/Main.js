@@ -30,6 +30,7 @@ import ModalDemo1 from "../demo/ModalDemo1";
 import ModalDemo2 from "../demo/ModalDemo2";
 import Products from "../products/Products";
 import ProductsSearch from "../products/ProductsSearch";
+import ProductsPagination from "../products/ProductsPagination";
 
 export default function Main() {
   return (
@@ -71,7 +72,8 @@ export default function Main() {
       {/* <ModalDemo1 /> */}
       {/* <ModalDemo2 /> */}
       {/* <Products /> */}
-      <ProductsSearch />
+      {/* <ProductsSearch /> */}
+      <ProductsPagination />
     </div>
   );
 }
