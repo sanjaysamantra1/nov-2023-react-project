@@ -3,51 +3,60 @@ import products from "./Products.json";
 import SearchBar from "react-js-search";
 
 export default function ProductsSearch() {
-  let [filteredProducts, setFilteredProducts] = useState(products);
+  let [filteredproducts, setFilteredProducts] = useState(products);
 
   const onSearchClick = (searchText) => {
-    let filteredArr = products.filter((data) => {
-      return data.description.includes(searchText);
+    let filteredData = products.filter((product) => {
+      return JSON.stringify(product).toLocaleLowerCase().includes(searchText.toLocaleLowerCase());
     });
-    setFilteredProducts(filteredArr);
+    setFilteredProducts([...filteredData]);
   };
-  const onSearchTextChange = (searchText, filteredArr) => {
-    setFilteredProducts(filteredArr);
-  };
+  
+  const sortProductsAsc = ()=>{
+    let sortedProducts = products.sort((p1,p2)=>p1.price-p2.price);
+    setFilteredProducts([...sortedProducts]);
+  }
+  const sortProductsDesc = ()=>{
+    let sortedProducts = products.sort((p1,p2)=>p2.price-p1.price);
+    setFilteredProducts([...sortedProducts]);
+  }
 
   return (
     <div className="container">
-      <div className="text-center">
-        <SearchBar
-          //   onSearchButtonClick={onSearchClick}
-          onSearchTextChange={onSearchTextChange}
-          placeHolderText={"Search here..."}
-          data={products}
-        />
-      </div>
       <div className="row">
-        {filteredProducts.map((product, ind) => {
+        <div className="col-sm-8">
+          <SearchBar
+            // onSearchTextChange={(term, filteredData) => {
+            //   setFilteredProducts([...filteredData]);
+            // }}
+            onSearchButtonClick={onSearchClick}
+            placeHolderText={"Search here..."}
+            data={products}
+          />
+        </div>
+        <div className="col-sm-4">
+          <button className="btn btn-primary m-1" onClick={sortProductsAsc}>Asc</button>
+          <button className="btn btn-secondary" onClick={sortProductsDesc}>Desc</button>
+        </div>
+      </div>
+      <div className="row mt-5">
+        {filteredproducts.map((prod) => {
           return (
-            <div className="col-sm-3" key={ind}>
-              <div className="card text-center">
+            <div className="col-sm-3">
+              <div className="card">
                 <img
-                  src={product.image}
+                  style={{ height: "200px" }}
+                  src={prod.image}
                   className="card-img-top"
                   alt="..."
-                  style={{ height: "200px" }}
                 />
-                <div className="card-body">
-                  <h5 className="card-title">{product.category}</h5>
-                  <p className="card-text">{product.title}</p>
-                  <p
-                    className="card-text"
-                    style={{ height: "200px", overflow: "scroll" }}
-                  >
-                    {product.description}
-                  </p>
-                  <p className="card-text"> {product.price}</p>
+                <div className="card-body text-center">
+                  <h5 className="card-title">{prod.category}</h5>
+                  <p className="card-text">{prod.title}</p>
+                  <p className="card-text">Price: {prod.price}</p>
+                  <p className="card-text">Rating: {prod.rating.rate}</p>
                   <a href="#" className="btn btn-primary">
-                    BUY NOW
+                    Buy Now
                   </a>
                 </div>
               </div>
