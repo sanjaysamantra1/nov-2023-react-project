@@ -9,7 +9,8 @@ export default class EventDemo2 extends Component {
     };
     this.f1 = this.f1.bind(this);
   }
-  f1() {
+  f1(event) {
+    console.log(event)
     console.log("This is f1...");
     console.log(this.state.name);
   }

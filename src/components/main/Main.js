@@ -37,6 +37,12 @@ import EventDemo3 from "../events/EventDemo3";
 import AdditionDemo2 from "../events/AdditionDemo2";
 import AdditionDemo3 from "../events/AdditionDemo3";
 import AdditionDemo4 from "../events/AdditionDemo4";
+import EventDemo4 from "../events/EventDemo4";
+import Parent from "../comp-communication/Parent";
+import PureDemo1 from "../demo/PureDemo1";
+import PureDemo2 from "../demo/PureDemo2";
+import LifecycleDemo1 from "../lifeCycle/LifecycleDemo1";
+import ComponentDidMountDemo from "../lifeCycle/ComponentDidMountDemo";
 
 export default function Main() {
   return (
@@ -81,7 +87,12 @@ export default function Main() {
       {/* <ProductsSearch /> */}
       {/* <ProductsPagination /> */}
       {/* <EventDemo2 /> */}
-      <AdditionDemo4 />
+      {/* <EventDemo4 /> */}
+      {/* <AdditionDemo4 /> */}
+      {/* <Parent /> */}
+      {/* <PureDemo1 /> */}
+      {/* <LifecycleDemo1  color='yellow' /> */}
+      <ComponentDidMountDemo />
     </div>
   );
 }
