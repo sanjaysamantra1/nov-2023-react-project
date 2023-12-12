@@ -11,8 +11,8 @@ function App() {
     <div>
       {/* <Header /> */}
       <Navbar />
-      <Categories />
-      <Carousel />
+      {/* <Categories /> */}
+      {/* <Carousel /> */}
       <Main />
       <Footer />
     </div>

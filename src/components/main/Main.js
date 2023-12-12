@@ -43,6 +43,10 @@ import PureDemo1 from "../demo/PureDemo1";
 import PureDemo2 from "../demo/PureDemo2";
 import LifecycleDemo1 from "../lifeCycle/LifecycleDemo1";
 import ComponentDidMountDemo from "../lifeCycle/ComponentDidMountDemo";
+import LifecycleDemo2 from "../lifeCycle/LifecycleDemo2";
+import LifecycleDemo3 from "../lifeCycle/LifecycleDemo3";
+import LifecycleDemo4 from "../lifeCycle/LifecycleDemo4";
+import UseEffectDemo1 from "../hooks/UseEffectDemo1";
 
 export default function Main() {
   return (
@@ -92,7 +96,11 @@ export default function Main() {
       {/* <Parent /> */}
       {/* <PureDemo1 /> */}
       {/* <LifecycleDemo1  color='yellow' /> */}
-      <ComponentDidMountDemo />
+      {/* <ComponentDidMountDemo /> */}
+      {/* <LifecycleDemo2 /> */}
+      {/* <LifecycleDemo3 /> */}
+      {/* <LifecycleDemo4 /> */}
+      <UseEffectDemo1 />
     </div>
   );
 }
