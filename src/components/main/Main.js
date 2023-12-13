@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Demo1 from "../demo/Demo1";
 import CssModule from "../cssModule/CssModule";
 import ConditionalCSS from "../conditionalCSS/ConditionalCSS";
@@ -47,8 +47,12 @@ import LifecycleDemo2 from "../lifeCycle/LifecycleDemo2";
 import LifecycleDemo3 from "../lifeCycle/LifecycleDemo3";
 import LifecycleDemo4 from "../lifeCycle/LifecycleDemo4";
 import UseEffectDemo1 from "../hooks/UseEffectDemo1";
+import UseEffectDemo2 from "../hooks/UseEffectDemo2";
+import UseEffectDemo3 from "../hooks/UseEffectDemo3";
 
 export default function Main() {
+  const [flag,setFlag] = useState(true);
+
   return (
     <div style={{ minHeight: "400px" }}>
       {/* <Demo1 /> */}
@@ -100,7 +104,9 @@ export default function Main() {
       {/* <LifecycleDemo2 /> */}
       {/* <LifecycleDemo3 /> */}
       {/* <LifecycleDemo4 /> */}
-      <UseEffectDemo1 />
+      {/* <UseEffectDemo2 /> */}
+      <button onClick={()=>{setFlag(!flag)}}>Update</button>
+      {flag ? <UseEffectDemo3 /> : null}
     </div>
   );
 }

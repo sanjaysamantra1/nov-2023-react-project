@@ -8,7 +8,7 @@ export default function UseEffectDemo1() {
 
   useEffect(() => {
     console.log("UseEffect Called");
-  });
+  },[a,b]);
 
   return (
     <>
