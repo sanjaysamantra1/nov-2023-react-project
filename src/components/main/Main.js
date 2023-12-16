@@ -49,9 +49,18 @@ import LifecycleDemo4 from "../lifeCycle/LifecycleDemo4";
 import UseEffectDemo1 from "../hooks/UseEffectDemo1";
 import UseEffectDemo2 from "../hooks/UseEffectDemo2";
 import UseEffectDemo3 from "../hooks/UseEffectDemo3";
+import RefDemo1 from "../ref/RefDemo1";
+import RefDemo2 from "../ref/RefDemo2";
+import RefDemo3 from "../ref/RefDemo3";
+import RefDemo4 from "../ref/RefDemo4";
+import FormDemo1 from "../form/FormDemo1";
+import FormDemo2 from "../form/FormDemo2";
+import FormDemo3 from "../form/FormDemo3";
+import FormDemo4 from "../form/FormDemo4";
+import FormDemo5 from "../form/FormDemo5";
 
 export default function Main() {
-  const [flag,setFlag] = useState(true);
+  const [flag, setFlag] = useState(true);
 
   return (
     <div style={{ minHeight: "400px" }}>
@@ -105,8 +114,12 @@ export default function Main() {
       {/* <LifecycleDemo3 /> */}
       {/* <LifecycleDemo4 /> */}
       {/* <UseEffectDemo2 /> */}
-      <button onClick={()=>{setFlag(!flag)}}>Update</button>
-      {flag ? <UseEffectDemo3 /> : null}
+      {/* <button onClick={()=>{setFlag(!flag)}}>Update</button>
+      {flag ? <UseEffectDemo3 /> : null} */}
+
+      {/* <RefDemo4 /> */}
+      {/* <FormDemo3 /> */}
+      <FormDemo5 />
     </div>
   );
 }
