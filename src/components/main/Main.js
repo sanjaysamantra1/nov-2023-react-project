@@ -58,6 +58,9 @@ import FormDemo2 from "../form/FormDemo2";
 import FormDemo3 from "../form/FormDemo3";
 import FormDemo4 from "../form/FormDemo4";
 import FormDemo5 from "../form/FormDemo5";
+import HttpDemo1 from "../http/HttpDemo1";
+import HttpDemo2 from "../http/HttpDemo2";
+import HttpDemo3 from "../http/HttpDemo3";
 
 export default function Main() {
   const [flag, setFlag] = useState(true);
@@ -119,7 +122,8 @@ export default function Main() {
 
       {/* <RefDemo4 /> */}
       {/* <FormDemo3 /> */}
-      <FormDemo5 />
+      {/* <FormDemo5 /> */}
+      <HttpDemo3 />
     </div>
   );
 }
