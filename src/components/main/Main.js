@@ -61,6 +61,11 @@ import FormDemo5 from "../form/FormDemo5";
 import HttpDemo1 from "../http/HttpDemo1";
 import HttpDemo2 from "../http/HttpDemo2";
 import HttpDemo3 from "../http/HttpDemo3";
+import HttpDemo4 from "../http/HttpDemo4";
+import ClickCounter from "../higherordercomponent/ClickCounter";
+import HoverCounter from "../higherordercomponent/HoverCounter";
+import ClickCounter2 from "../higherordercomponent/ClickCounter2";
+import HoverCounter2 from "../higherordercomponent/HoverCounter2";
 
 export default function Main() {
   const [flag, setFlag] = useState(true);
@@ -123,7 +128,12 @@ export default function Main() {
       {/* <RefDemo4 /> */}
       {/* <FormDemo3 /> */}
       {/* <FormDemo5 /> */}
-      <HttpDemo3 />
+      {/* <HttpDemo3 /> */}
+      {/* <HttpDemo2 /> */}
+      {/* <HttpDemo4 /> */}
+      <ClickCounter />
+      <hr/>
+      <HoverCounter />
     </div>
   );
 }
