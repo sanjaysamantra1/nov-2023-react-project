@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 import products from "./Products.json";
+import { Link, createSearchParams, useNavigate } from "react-router-dom";
 
 export default function Products() {
+  const navigate = useNavigate();
+
+  const navigateHandler = (title, price) => {
+    navigate({
+      pathname: "/productdetail",
+      search: `?${createSearchParams({ title, price })}`,
+    });
+  };
+
   return (
     <div className="container">
       <div className="text-center"></div>
@@ -26,9 +36,17 @@ export default function Products() {
                     {product.description}
                   </p>
                   <p className="card-text"> {product.price}</p>
-                  <a href="#" className="btn btn-primary">
-                    BUY NOW
-                  </a>
+                  <button>
+                    <Link to={`/productdetails/${product.id}`}> View</Link>
+                  </button>
+                  <button
+                    className="btn btn-secondary"
+                    onClick={() => {
+                      navigateHandler(product.title, product.price);
+                    }}
+                  >
+                    query param
+                  </button>
                 </div>
               </div>
             </div>

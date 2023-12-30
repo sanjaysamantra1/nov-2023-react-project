@@ -28,7 +28,7 @@ import RemainingCharDemo from "../state/RemainingCharDemo";
 import SweetAlertDemo from "../demo/SweetAlertDemo";
 import ModalDemo1 from "../demo/ModalDemo1";
 import ModalDemo2 from "../demo/ModalDemo2";
-import Products from "../products/Products";
+// import Products from "../products/Products";
 import ProductsSearch from "../products/ProductsSearch";
 import ProductsPagination from "../products/ProductsPagination";
 import EventDemo1 from "../events/EventDemo1";
@@ -66,6 +66,8 @@ import ClickCounter from "../higherordercomponent/ClickCounter";
 import HoverCounter from "../higherordercomponent/HoverCounter";
 import ClickCounter2 from "../higherordercomponent/ClickCounter2";
 import HoverCounter2 from "../higherordercomponent/HoverCounter2";
+import ToDoDemo from "../todo/ToDoDemo";
+import RouteContainer from "./RouteContainer";
 
 export default function Main() {
   const [flag, setFlag] = useState(true);
@@ -131,9 +133,11 @@ export default function Main() {
       {/* <HttpDemo3 /> */}
       {/* <HttpDemo2 /> */}
       {/* <HttpDemo4 /> */}
-      <ClickCounter />
+      {/* <ClickCounter />
       <hr/>
-      <HoverCounter />
+      <HoverCounter /> */}
+      {/* <ToDoDemo /> */}
+      <RouteContainer />
     </div>
   );
 }
