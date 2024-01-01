@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c447c676.css",
-    "main.js": "/static/js/main.a32c4ac0.js",
-    "static/js/382.24ec8a96.chunk.js": "/static/js/382.24ec8a96.chunk.js",
-    "static/js/787.575eb939.chunk.js": "/static/js/787.575eb939.chunk.js",
-    "index.html": "/index.html",
-    "main.c447c676.css.map": "/static/css/main.c447c676.css.map",
-    "main.a32c4ac0.js.map": "/static/js/main.a32c4ac0.js.map",
-    "382.24ec8a96.chunk.js.map": "/static/js/382.24ec8a96.chunk.js.map",
-    "787.575eb939.chunk.js.map": "/static/js/787.575eb939.chunk.js.map"
+    "main.css": "/nov-2023-react-project/static/css/main.c447c676.css",
+    "main.js": "/nov-2023-react-project/static/js/main.dee43032.js",
+    "static/js/382.24ec8a96.chunk.js": "/nov-2023-react-project/static/js/382.24ec8a96.chunk.js",
+    "static/js/787.575eb939.chunk.js": "/nov-2023-react-project/static/js/787.575eb939.chunk.js",
+    "index.html": "/nov-2023-react-project/index.html",
+    "main.c447c676.css.map": "/nov-2023-react-project/static/css/main.c447c676.css.map",
+    "main.dee43032.js.map": "/nov-2023-react-project/static/js/main.dee43032.js.map",
+    "382.24ec8a96.chunk.js.map": "/nov-2023-react-project/static/js/382.24ec8a96.chunk.js.map",
+    "787.575eb939.chunk.js.map": "/nov-2023-react-project/static/js/787.575eb939.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c447c676.css",
-    "static/js/main.a32c4ac0.js"
+    "static/js/main.dee43032.js"
   ]
 }
